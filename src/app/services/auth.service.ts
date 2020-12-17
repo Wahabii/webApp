@@ -1,3 +1,4 @@
+import { User } from './../interfaces/user.interface';
 
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
@@ -27,17 +28,8 @@ export class AuthService {
 
    }
 
-Login(email, password): Observable<any>{
-   return this.http.post<any>(this.Url,
-
-{
-body: JSON.stringify({
-   email: email,
-   password: password
-})
-}
-,
-httpOptions
+Login(data:User): Observable<any>{
+   return this.http.post<any>(this.Url,data,httpOptions
 )
 
 }

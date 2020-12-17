@@ -1,3 +1,4 @@
+import { User } from './../../interfaces/user.interface';
 import { AuthService } from './../../services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
@@ -37,9 +38,9 @@ export class LoginComponent implements OnInit {
 
 login (form) {
 
-   let data = form.value;
-   console.log(data.email)
-  this.as.Login(data.email, data.password).subscribe((res) => {
+   let data : User = form.value;
+   console.log(data)
+  this.as.Login(data).subscribe((res) => {
        console.log(res)
        /*
        if(res.jwt != null && (res.user.username === this.state.identifier)){

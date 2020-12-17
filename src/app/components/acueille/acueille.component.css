@@ -1,0 +1,6 @@
+.bgimage{
+  background-image: url(../../../assets/bg.png);
+  background-position: center  ; /* 	The first value is the horizontal position and the second value is the vertical. */
+  background-size: cover; /* Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges*/
+  height: 300px;
+}

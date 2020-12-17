@@ -1,0 +1,41 @@
+.view{
+
+  background-color: cornflowerblue;
+  width: 20%;
+  top: 20%;
+}
+
+
+.form-background{
+
+  background-color: cornflowerblue;
+  width: 40%;
+  top: 50%;
+  margin-left: 55%;
+  position: absolute;
+  border: 1px black solid;
+}
+
+
+h2{
+  color: red ;
+  font-family: 'Roboto', sans-serif;
+  text-align: right;
+  margin-top: 10%;
+
+}
+
+form{
+     background-color: crimson;
+     border: 1px black solid;
+     margin: 45px;
+     width: 60%;
+
+}
+
+button{
+  width: 100%;
+  text-align: center;
+}
+
+

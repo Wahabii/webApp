@@ -1,0 +1,363 @@
+
+
+/* la distance entre les liens de navbar*/
+.mynav a{
+ margin-right: 30px;
+
+
+}
+
+/* la position de logo de notre site web*/
+#logo{
+  position: absolute;
+  width: 60px;
+  height: 50px;
+  left: 80px;
+  top: 60%;
+}
+
+
+/* la responsable de l'ouverture de la dropdown-menu avec le curseur */
+.btn-group:hover .dropdown-menu {
+  display: block !important;
+}
+
+/* le style de le mot ou */
+#ou{
+  top: 45px;
+  position: absolute;
+  left: 90px;
+  font-size: 0.7em ;
+  background-color: white;
+  color: gray;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin-top: 1px;
+
+}
+
+
+/* le style des tous les liens en gray*/
+#compte{
+  color: rgb(77, 76, 76) !important;
+  font-size: 0.8em;
+  font-family:  'Arial Narrow Bold', sans-serif;
+  position: relative;
+
+
+}
+
+/* le style de l'icon user dans la bare du menu compte*/
+.customItem svg {
+   position: absolute;
+   top: 113px;
+   margin-left: 25px;
+   color:black ;
+}
+
+/* le style de coulers avec le curseur dans le bare de menu */
+.customItem  a:hover {
+  background-color: #ecf0f1 !important;
+
+}
+
+/*le style de l'icon compte*/
+#compte-icon{
+  width: 16px;
+  height: 16px;
+  left: -5px;
+  top: 8px;
+  margin-left: 10px;
+}
+
+/* le style du mot "votre compte" */
+#compte-user{
+  margin-left:35px;
+  color: rgb(77, 76, 76) !important;
+  font-size: 0.8em;
+  font-family:  'Arial Narrow Bold', sans-serif;
+  position: relative;
+  padding: 8px;
+  right: 19px;
+  padding-left: 30px;
+
+}
+
+/* le style de l'icon commande*/
+#commande-logo{
+  width: 16px;
+  height: 16px;
+  left: -5px;
+  top: 8px;
+  margin-left: 10px;
+
+}
+
+/* le style du mot " vos commande"*/
+#commandelink{
+  margin-left:35px;
+  color: rgb(77, 76, 76) !important;
+  font-size: 0.8em;
+  font-family:  'Arial Narrow Bold', sans-serif;
+  position: relative;
+  padding: 8px;
+  right: 19px;
+  padding-left: 30px;
+}
+/* le style du mot " vos liste d'envies"*/
+#liste-envies{
+  margin-left:35px;
+  color: rgb(77, 76, 76) !important;
+  font-size: 0.8em;
+  font-family:  'Arial Narrow Bold', sans-serif;
+  position: relative;
+  padding: 8px;
+  padding-left: 30px;
+  right: 20px;
+
+}
+/* le style de l'icon envies*/
+#envies-icon{
+  width: 16px;
+  height: 16px;
+  left: -5px;
+  top: 8px ;
+  margin-left: 10px;
+}
+
+/* le style du button recherche actuel */
+.btn-secondary{
+  position: relative;
+  border-color: white !important;
+  right: -16px;
+  background-color: #f58d17f3;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 0.9em !important;
+  padding: 8px;
+  top:39px;
+}
+
+/* le style du button recherche avec le hover */
+.btn-secondary:hover{
+  color: white !important;
+  background-color: #e0841af3 !important;
+  border-color: white;
+  font-size: 0.9m;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* le style du button recherche si il est active */
+.btn-secondary:focus{
+  box-shadow: 0 0 0 0.2rem rgb(255 255 255 / 50%) !important;
+}
+
+/* le style de l'icon de recherche*/
+.navbar-form svg{
+  position: absolute;
+  top: 113px !important;
+  color: rgb(92, 89, 89);
+  right: 425px;
+
+
+}
+
+/* le style de l'input */
+.form-group input {
+    width: 183%;
+    position: relative;
+    right: 185px;
+    margin-top: 95px;
+    padding-top: 2px !important;
+
+    padding-left: 42px;
+
+}
+
+/* le style de input avec focus*/
+.form-control:focus {
+
+  box-shadow: 0 0 0 0.2rem  white !important;
+  border-color: #ced4da !important;
+}
+
+
+/* lee style de la 1er navbar de l'annimation */
+#animatinNav{
+  width: 100%;
+  position: absolute;
+  background-color: black;
+  left: 0%;
+  top: 0%;
+  height: 34%;
+
+}
+
+/* le style de 2eme nav pour vendez */
+#Nav2 {
+  width: 100%;
+  position: absolute;
+  background-color: #ecf0f1;
+  left: 0%;
+  top: 34%;
+  height: 20%;
+  color: orange;
+
+}
+
+/* l style du mot vendez surmole tunis*/
+#vendezMole{
+color: orange !important;
+position: relative;
+left: 100px;
+font-size: 0.8em;
+}
+
+/* le style de l'icon star sur le navbar */
+#staricon{
+  position: relative;
+  left: 94px;
+  top: -0.3px;
+  background-color: rgb(247, 113, 23);
+  color: white;
+  padding: 1px;
+}
+
+
+/* le style du mot aide avec l'icon  ? */
+.btn-group button{
+  margin-left: 20px;
+}
+
+/* le style du l'icon aide */
+#intorigationicon{
+
+  top: 8px;
+
+}
+/* le style de mot center-assistance*/
+#Centre-assistance
+{
+ top:0px !important;
+ padding: 0%;
+ margin-left: 4%;
+ color: gray !important;
+ font-family:  'Arial Narrow Bold', sans-serif;
+ color: rgb(77, 76, 76) !important;
+ font-size: 0.8em;
+ margin-bottom: 22px;
+
+}
+/* le style de mot Passez-suivre*/
+#Passez-suivre
+{
+  padding: 0%;
+  margin-left: 4%;
+  color: gray !important;
+  font-family:  'Arial Narrow Bold', sans-serif;
+  color: rgb(77, 76, 76) !important;
+  font-size: 0.8em;
+  margin-bottom: 22px;
+}
+
+/* le style de mot nnuler-commande*/
+#Annuler-commande
+{
+ padding: 0%;
+ margin-left: 4%;
+ color: gray !important;
+ font-family:  'Arial Narrow Bold', sans-serif;
+ color: rgb(77, 76, 76) !important;
+ font-size: 0.8em;
+ margin-bottom: 22px;
+}
+
+/* le style de mot Retour-rem*/
+#Retour-rem
+{
+ padding: 0%;
+ margin-left: 4%;
+ color: gray !important;
+ font-family:  'Arial Narrow Bold', sans-serif;
+ color: rgb(77, 76, 76) !important;
+ font-size: 0.8em;
+ margin-bottom: 22px;
+}
+
+/* le style de mot Paiement-compte*/
+#Paiement-compte
+{
+  padding: 0%;
+  margin-left: 4%;
+  color: gray !important;
+  font-family:  'Arial Narrow Bold', sans-serif;
+  color: rgb(77, 76, 76) !important;
+  font-size: 0.8em;
+  margin-bottom: 5px !important;
+}
+
+
+
+/* le style de mot center-assistance avec le hover*/
+#Centre-assistance:hover{
+
+ padding: 5%;
+ margin:0%;
+ padding-left: 4%;
+ font-family:  'Arial Narrow Bold', sans-serif !important;
+ color: rgb(77, 76, 76) !important;
+ font-size: 0.9em  !important;
+ margin-bottom: 22px;
+ background-color: #ecf0f1 !important;
+ width: 100% !important;
+
+
+}
+/* le style de mot Passez-suivre  avec le hover*/
+#Passez-suivre:hover{
+  padding: 5%;
+  margin:0%;
+  padding-left: 4%;
+  font-family:  'Arial Narrow Bold', sans-serif !important;
+  color: rgb(77, 76, 76) !important;
+  font-size: 0.9em  !important;
+  margin-bottom: 22px;
+  background-color: #ecf0f1 !important;
+  width: 100% !important;
+
+}
+/* le style de mot Annuler-commande avec le hover*/
+#Annuler-commande:hover{
+  padding: 5%;
+  margin:0%;
+  padding-left: 4%;
+  font-family:  'Arial Narrow Bold', sans-serif !important;
+  color: rgb(77, 76, 76) !important;
+  font-size: 0.9em  !important;
+  margin-bottom: 22px;
+  background-color: #ecf0f1 !important;
+  width: 100% !important;
+}
+/* le style de mot Retour-rem avec le hover*/
+#Retour-rem:hover{
+  padding: 5%;
+  margin:0%;
+  padding-left: 4%;
+  font-family:  'Arial Narrow Bold', sans-serif !important;
+  color: rgb(77, 76, 76) !important;
+  font-size: 0.9em  !important;
+  margin-bottom: 22px;
+  background-color: #ecf0f1 !important;
+  width: 100% !important;
+}
+/* le style de mot Paiement-compte avec le hover*/
+#Paiement-compte:hover{
+  padding: 5%;
+  margin:0%;
+  padding-left: 4%;
+  font-family:  'Arial Narrow Bold', sans-serif !important;
+  color: rgb(77, 76, 76) !important;
+  font-size: 0.9em  !important;
+  margin-bottom: 22px;
+  background-color: #ecf0f1 !important;
+  width: 100% !important;
+}

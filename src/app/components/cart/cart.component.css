@@ -1,0 +1,28 @@
+
+tbody{
+
+   border-bottom: 3px solid black;
+
+}
+
+thead {
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  top: 50px;
+  margin-right: 20px;
+}
+
+tr {
+ border-bottom: 2px solid black
+}
+
+td{
+   border-right: 2px solid black;
+   padding: 8px 15px
+}
+
+
+.btn
+ {
+   margin: 3px
+ }

@@ -1,3 +1,5 @@
+
+import { User } from './../../interfaces/user.interface';
 import { AuthService } from './../../services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
@@ -20,15 +22,10 @@ export class LoginComponent implements OnInit {
   /*
   login(form){
     console.log(form);
-
     let data = form.value;
    this.as.login(data.email, data.password).then(() => {
     this.router.navigate(['']);
-
    }).catch((err) => console.log(err));
-
-
-
    }
 */
 
@@ -37,25 +34,28 @@ export class LoginComponent implements OnInit {
 
 login (form) {
 
-   let data = form.value;
-   console.log(data.email)
-  this.as.Login(data.email, data.password).subscribe((res) => {
+   let data : User = form.value;
+   console.log(data)
+   this.as.Login(data).subscribe( async (res) => {
        console.log(res)
-       /*
-       if(res.jwt != null && (res.user.username === this.state.identifier)){
-         this.saveToken(res.jwt)
-         this.saveUserId(res.user.id)
-           this.props.navigation.navigate('Main',{res});
+       const data = await res ;
+       console.log("token >>>>",data.jwt);
+       console.log("id>>>", data.id);
 
+       if(data.jwt != null && data.username != null){
+         localStorage.setItem('token', data.jwt)
+         localStorage.setItem('id', data.id)
+
+          this.router.navigate(['/accuille']);
 
     }
     else {
         alert('username or pasword invalid !!!');
     }
-*/
  })
 }
 
 
 
 }
+

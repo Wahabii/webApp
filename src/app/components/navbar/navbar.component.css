@@ -24,15 +24,15 @@
 
 /* le style de le mot ou */
 #ou{
-  top: 45px;
-  position: absolute;
-  left: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 90px;
   font-size: 0.7em ;
   background-color: white;
   color: gray;
-  padding-left: 13px;
-  padding-right: 13px;
-  margin-top: 1px;
+
+
 
 }
 
@@ -50,7 +50,7 @@
 /* le style de l'icon user dans la bare du menu compte*/
 .customItem svg {
    position: absolute;
-   top: 113px;
+   top: 113px !important;
    margin-left: 25px;
    color:black ;
 }
@@ -63,66 +63,65 @@
 
 /*le style de l'icon compte*/
 #compte-icon{
-  width: 16px;
-  height: 16px;
-  left: -5px;
-  top: 8px;
-  margin-left: 10px;
+  display: flex;
+  width: 11%;
+  height: 13%;
+  top: 50.5%;
+  justify-content: row;
 }
 
 /* le style du mot "votre compte" */
 #compte-user{
-  margin-left:35px;
+
   color: rgb(77, 76, 76) !important;
   font-size: 0.8em;
   font-family:  'Arial Narrow Bold', sans-serif;
-  position: relative;
-  padding: 8px;
-  right: 19px;
-  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: -20%;
+
 
 }
 
 /* le style de l'icon commande*/
 #commande-logo{
-  width: 16px;
-  height: 16px;
-  left: -5px;
-  top: 8px;
-  margin-left: 10px;
+  display: flex;
+  width: 10%;
+  height: 12%;
+  top: 66.5%;
+  justify-content: row;
 
 }
 
 /* le style du mot " vos commande"*/
 #commandelink{
-  margin-left:35px;
+
   color: rgb(77, 76, 76) !important;
   font-size: 0.8em;
   font-family:  'Arial Narrow Bold', sans-serif;
-  position: relative;
-  padding: 8px;
-  right: 19px;
-  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3%;
 }
 /* le style du mot " vos liste d'envies"*/
 #liste-envies{
-  margin-left:35px;
   color: rgb(77, 76, 76) !important;
   font-size: 0.8em;
   font-family:  'Arial Narrow Bold', sans-serif;
-  position: relative;
-  padding: 8px;
-  padding-left: 30px;
-  right: 20px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10%;
 }
 /* le style de l'icon envies*/
 #envies-icon{
-  width: 16px;
-  height: 16px;
-  left: -5px;
-  top: 8px ;
-  margin-left: 10px;
+  display: flex;
+  width: 10%;
+  height: 12%;
+  top: 82%;
+  justify-content: row;
 }
 
 /* le style du button recherche actuel */
@@ -361,3 +360,130 @@ font-size: 0.8em;
   background-color: #ecf0f1 !important;
   width: 100% !important;
 }
+
+/* le coleur de la  border du button se connecter si il est active  */
+.btn-group button{
+  box-shadow: 0 0 0 0.2rem #ffffff !important;
+
+}
+
+
+/*le style de l'icon user dans la bar de menu se connecter " votre compte"  */
+.btn svg {
+
+  /*
+  display: flex !important;
+  top: 6px;
+  flex-direction: row !important;
+ */
+
+
+  position: absolute;
+  top: 6px;
+  left: -13px;
+
+}
+
+
+
+/* les couleurs avec le curseur  de  "creer un compte" */
+.dropdown-menu a:hover {
+
+  color: orange !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: rgb(255, 201, 164) !important;
+
+
+}
+
+
+
+
+/* les couleurs par defaut de  "creer un compte" */
+.dropdown-menu a {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: orange !important;
+  width:100% !important;
+  font-size: 0.9em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   background-color: transparent !important;
+
+}
+
+
+
+
+
+
+/* le style de la lien de la button se connecter dans le dropdown avec le curseur*/
+.btn-warning:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white !important;
+  background-color: #e0841af3 !important ;
+  border-color: white;
+  width: 80%;
+  font-size: 1em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+/* le style de la lien de la button se connecter dans le dropdown*/
+.btn-warning {
+  color: white !important;
+  background-color: #f58d17f3;
+  border-color: white;
+  width: 80%;
+
+  font-size: 1em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+
+}
+
+
+/* le style de la lien  se connecter sur le navbar  si en foucs le curseur  */
+.btn-danger:hover {
+  color:orange !important;
+  border-color: white !important;
+
+}
+
+
+/* le style de la lien par defaut pour le button seconnecter */
+.btn-danger {
+  color:black !important;
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  border: none !important;
+  position: relative;
+  right:2px;
+
+}
+
+
+
+/* couleur de la lien actuelle active  */
+.navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  /* border-bottom: 2px solid #007bff;*/
+   color: orange !important
+}
+
+/* customise of the nav minue color*/
+.bg-light {
+  background-color: #fff !important;
+}
+
+
+

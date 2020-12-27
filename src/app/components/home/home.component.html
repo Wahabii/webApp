@@ -1,12 +1,12 @@
 
 
-<div class="container">
+<div class="container mt-2">
    <div class="row">
        <div class="col-lg-2 col-md-4 col-sm-6" *ngFor="let product of posts; index as i">
 
         <div class="card" >
 
-          <img class="card-img-top" [src]="product.Url">
+          <img class="card-img-top" [src]="product.Url[0]">
 
           <div class="card-body">
 

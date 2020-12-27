@@ -1,26 +1,35 @@
 
+<div class="body">
+  <div class="form-background">
+   <form>
+     <table>
+          <thead>
+            <td id="color">Name</td>
+            <td id="color">Price</td>
+            <td id="color">Amount</td>
+            <td id="color">Total</td>
+            <td id="color" >Option</td>
+          </thead>
+      <tbody>
+          <tr *ngFor="let good of cart; index as i ">
+            <td>{{good.name}}</td>
+            <td>{{good.price | currency}}</td>
+            <td>
+              <input type="number" placeholder="Amount (kg)" [(ngModel)]="good.amount">
+            </td>
+            <td>{{good.price * good.amount | currency }}</td>
+            <td>
+                <button class="btn btn-primary" (click)="save(i)" >Save</button>
+                <button class="btn btn-danger" (click)="delete(i)">Delete</button>
+            </td>
 
-<table>
-   <thead>
-     <td>Name</td>
-     <td>Price</td>
-     <td>Amount</td>
-     <td>Total</td>
-     <td>Option</td>
-   </thead>
-   <tbody>
-      <tr *ngFor="let good of cart; index as i ">
-         <td>{{good.name}}</td>
-         <td>{{good.price | currency}}</td>
-         <td>
-           <input type="number" placeholder="Amount (kg)" [(ngModel)]="good.amount">
-         </td>
-         <td>{{good.price * good.amount | currency }}</td>
-         <td>
-            <button class="btn btn-primary" (click)="save(i)" >Save</button>
-            <button class="btn btn-danger" (click)="delete(i)">Delete</button>
-         </td>
+          </tr>
+      </tbody>
+    </table>
+   </form>
+  </div>
 
-      </tr>
-   </tbody>
-</table>
+</div>
+
+
+

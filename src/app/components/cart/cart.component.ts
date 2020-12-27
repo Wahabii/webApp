@@ -1,6 +1,7 @@
 import { Shopping } from './../../interfaces/shopping.interface';
 import { CartService } from './../../services/cart.service';
 import { Component, OnInit } from '@angular/core';
+import { take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-cart',
@@ -14,7 +15,8 @@ export class CartComponent implements OnInit {
   constructor(private cs: CartService) { }
 
   ngOnInit(): void {
-    this.cs.getCart().subscribe(cart => {
+    /*
+    this.cs.getCart().pipe(take(1)).subscribe(cart  => {
       this.cart = cart.map(shopping => {
          return {
            id: shopping.payload.doc.id,
@@ -24,9 +26,10 @@ export class CartComponent implements OnInit {
        console.log('cate >>>', this.cart);
 
     })
+    */
   }
 
-
+/*
   delete(index){
 
     this.cs.delete(this.cart[index].id);
@@ -38,6 +41,6 @@ export class CartComponent implements OnInit {
 
   }
 
-
+*/
 
 }

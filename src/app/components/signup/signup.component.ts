@@ -18,6 +18,9 @@ export class SignupComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+
+/*
   signup(form){
     let data: User = form.value;
     this.as.signup(data.email, data.password)
@@ -40,5 +43,33 @@ export class SignupComponent implements OnInit {
     })
 
   }
+*/
+
+
+signup(form){
+  let data : User = form.value;
+  this.as.Signup(data).subscribe( async (res) => {
+    //console.log('response from the database>>>',res);
+    console.log(' header response >>> ', res);
+
+    alert('Registred successfully');
+    this.router.navigate(['/login']);
+
+
+  },
+
+  error => {
+    console.log('error from the server >>>',error.error);
+    
+    this.errorMessage = error.error;
+    //this.isSignUpFailed = true;
+    //this.toastr.error(this.errorMessage,'Signup failed!');
+  }
+
+  );
+
+}
+
+
 
 }

@@ -1,196 +1,29 @@
 
 
-/* le couleur de background de tous le pages de notre application */
 body{
-
-    background-color: white;
-
-
-
-}
-
-/* couleur de la lien actuelle active  */
-.navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-  /* border-bottom: 2px solid #007bff;*/
-   color: orange !important
+  background-color: slateblue;
 }
 
 
-/* couleur de la lien avec le curseur */
-.nav-item a:hover {
-  color: blue  !important ;
-}
-
-/* customiser le couleur de notre navnar*/
-.bg-light {
-  background-color: rgb(255, 255, 255) !important;
-  height: 150px;
-}
-
-/* le style de tous les liens sur le navbar */
-.navbar a{
-  color: black !important;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-/* le style de la lien par defaut pour le button seconnecter */
-.btn-danger {
-  color:black !important;
-  background-color: #ffffff !important;
-  border-color: #ffffff !important;
-  border: none !important;
-  position: relative;
-  right:-45px;
-
-}
-/* le style de la lien  se connecter sur le navbar  si en foucs le curseur  */
-.btn-danger:hover {
-  color:orange !important;
-  border-color: white !important;
-
-}
-
-/* le style de la lien de la button se connecter dans le dropdown*/
-.btn-warning {
-  color: white !important;
-  background-color: #f58d17f3;
-  border-color: white;
-  width: 190px;
-  margin-left: 14px !important;
-  margin-right: 16px;
-  font-size: 1em;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-
-}
-
-/* le style de la lien de la button se connecter dans le dropdown avec le curseur*/
-.btn-warning:hover {
-  color: white !important;
-  background-color: #e0841af3 !important ;
-  border-color: white;
-  width: 190px;
-  font-size: 1em;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-/* le postion de se connecter sur le navbar*/
-.btn-group button{
-  top: 38px !important;
-}
-
-/* le style  de la  div  dropdown-menu*/
-.dropdown-menu{
-
-   width: 167% !important;
-
-}
-
-/* les couleurs par defaut de  "creer un compte" */
-.dropdown-menu a {
-
-  color: orange !important;
-
-  margin-left: 22px;
-
-  font-size: 0.9em;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   background-color: transparent !important;
-
-}
-
-
-/* les couleurs avec le curseur  de  "creer un compte" */
-.dropdown-menu a:hover {
-
-  color: orange !important;
-  width: 175px !important;
-  background-color: rgb(255, 201, 164) !important;
-
-
-}
-
-
-/*le style de l'icon user dans la bar de menu se connecter " votre compte"  */
-.btn svg {
-    position: absolute;
-    top: 6px;
-    left: -13px;
-
-}
-
-/* le coleur de la  border du button se connecter si il est active  */
-.btn-group button{
-  box-shadow: 0 0 0 0.2rem #ffffff !important;
-
-}
 
 
 
 
 @media all and (max-width: 1000px){
-  body{
-
-         
-    }
-    .nav {
-       width: 100% ; min-width: auto; height: auto !important;
-
-          display: flex;
-          flex-wrap: wrap;
-          padding-left: 0px !important;
-          margin-bottom: 0;
-          list-style: none;
 
 
+  /* le style de se connecter*/
+  .btn-danger {
+    color:black !important;
+    background-color: red !important;
+    border-color: #ffffff !important;
+    border: none !important;
+    position: relative;
 
-     }
-     .navbar {
 
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center !important;
-        justify-content: space-between;
-        padding: .5rem 1rem;
-
-    }
-    .form-group input{
-      position: relative !important;
-    }
-
-    /* le style de se connecter*/
-    .btn-group button{
-      position: absolute !important;
-      top: 120px !important;
-      right: 90px !important;
-      margin-left: -2px !important;
-      padding-right: 20px !important;
-    }
-
-    /* le style de navbar toggler */
-    .navbar-toggler {
-      margin-top: 72px !important;
-      padding: .25rem .75rem;
-      font-size: 1.25rem;
-      line-height: 1;
-      background-color: transparent;
-      border: 1px solid transparent;
-          border-top-color: transparent;
-          border-right-color: transparent;
-          border-bottom-color: transparent;
-          border-left-color: transparent;
-      border-radius: .25rem;
-  }
-
-/* le style de la le produit de la page home*/
-  .row
-  {
-    margin-top: 60px;
   }
 
 
-  #navbarSupportedContent{
-     margin: 40px !important;
-  }
 
-  }
+
+}

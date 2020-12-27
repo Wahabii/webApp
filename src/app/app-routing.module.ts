@@ -1,3 +1,4 @@
+import { FooterComponent } from './components/footer/footer.component';
 import { AcueilleComponent } from './components/acueille/acueille.component';
 
 import { CartComponent } from './components/cart/cart.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'signup', component: SignupComponent},
   {path: 'accuille', component: AcueilleComponent},
   {path: 'cart', component: CartComponent, canActivate: [AuthGuard]},
+  {path: 'footer', component: FooterComponent},
   {path: 'admin', component: GoodsComponent, canActivate: [AuthGuard]},
   {path: '**', component: NotFoundComponent}
 ];

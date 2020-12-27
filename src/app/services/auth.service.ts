@@ -1,3 +1,4 @@
+import { User } from './../interfaces/user.interface';
 
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
@@ -6,8 +7,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 
+let token = localStorage.getItem('token');
 const httpOptions = {
-  headers: new HttpHeaders({'Content-Type': 'application/json'})
+  headers: new HttpHeaders({'Content-Type': 'application/json' })
 }
 
 @Injectable({
@@ -22,25 +24,16 @@ export class AuthService {
  //user: Observable<firebase.User>
 
   private Url = 'http://localhost:3000/api/auth/login';
+  private Urlregister = 'http://localhost:3000/api/users/register';
 
   constructor(private afAuth: AngularFireAuth, private http: HttpClient) {
 
    }
 
-Login(email, password): Observable<any>{
-   return this.http.post<any>(this.Url,
+Login(data:User): Observable<any>{
+   return this.http.post<any>(this.Url,data,httpOptions)
 
-{
-body: JSON.stringify({
-   email: email,
-   password: password
-})
-}
-,
-httpOptions
-)
-
-}
+};
 
 
 
@@ -70,10 +63,21 @@ isLoggedIn() {
 
 
 
-  signup(email, password){
+  signup(data : User){
 
-    return this.afAuth.createUserWithEmailAndPassword(email, password);
+    //return this.afAuth.createUserWithEmailAndPassword(email, password);
   }
+
+
+
+  Signup(data : User): Observable<any>{
+     console.log('data getting from the server :>>>', data);
+
+    return this.http.post<any>(this.Urlregister,data, httpOptions)
+
+
+  }
+
 
 
   /*
@@ -84,9 +88,7 @@ isLoggedIn() {
       localStorage.setItem('token', resp.user.refreshToken);
       resolve(true);
     });
-
     })
-
   }
   */
 

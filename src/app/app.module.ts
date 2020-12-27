@@ -18,6 +18,7 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AcueilleComponent } from './components/acueille/acueille.component'
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     SignupComponent,
     NotFoundComponent,
     NavbarComponent,
-    AcueilleComponent
+    AcueilleComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

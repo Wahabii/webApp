@@ -70,24 +70,29 @@ ngOnInit() {
 
 
   addToCart(index : number){
-     let uid = localStorage.getItem('id');
-    if(uid) this.add = +index;
+     let id = localStorage.getItem('id');
+    if(id)
+     this.add = +index;
     else
     this.router.navigate(['/login']);
   }
 
 
   buy(amount: number){
-    /*
-    let selectedGood = this.goods[this.add];
+
+    let selectedGood = this.posts[this.add];
     console.log('selectedgood', selectedGood);
     let data= {
       name: selectedGood.name,
       amount: +amount,
       price: selectedGood.price
     }
-      this.cs.addToCart(data).then(() => this.add = -1)
-      */
+      this.cs.addDataToCart(data).subscribe((result) => {
+         this.add = -1
+        console.log("data from server carts >>>",result);
+
+      })
+
   }
 
 

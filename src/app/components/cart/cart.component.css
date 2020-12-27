@@ -1,28 +1,64 @@
 
 tbody{
 
-   border-bottom: 3px solid black;
+   border-bottom: black;
 
 }
 
 thead {
-  border-bottom: 3px solid black;
-  border-top: 3px solid black;
-  top: 50px;
-  margin-right: 20px;
+  display: flex;
+  top: 20px;
+  border-bottom: 0.5px solid black;
+  border-top: 1px solid black;
+  width: 100%;
+  background-color: rgb(67, 117, 253);
 }
 
 tr {
- border-bottom: 2px solid black
+ border-bottom: 1px solid black
 }
 
 td{
-   border-right: 2px solid black;
+   border-right: 1px solid black;
    padding: 8px 15px
 }
-
 
 .btn
  {
    margin: 3px
  }
+
+.body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-background{
+display: flex;
+min-width: 360px;
+height: 400px;
+padding:2px;
+background-color: rgb(255, 255, 255);
+border: 0.5px black solid;
+border-radius: 3px;
+margin-top: 5%;
+}
+
+form{
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+}
+
+table{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#color{
+  color: white;
+}

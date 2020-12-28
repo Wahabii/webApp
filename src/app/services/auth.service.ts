@@ -8,6 +8,8 @@ import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 
 let token = localStorage.getItem('token');
+const TOKEN_KEY = 'AuthToken';
+
 const httpOptions = {
   headers: new HttpHeaders({'Content-Type': 'application/json' })
 }
@@ -22,7 +24,6 @@ export class AuthService {
  //userId: string = '';
 
  //user: Observable<firebase.User>
-
   private Url = 'http://localhost:3000/api/auth/login';
   private Urlregister = 'http://localhost:3000/api/users/register';
 
@@ -35,7 +36,9 @@ Login(data:User): Observable<any>{
 
 };
 
-
+public getToken(): string {
+  return localStorage.getItem(TOKEN_KEY);
+}
 
 isLoggedIn() {
 

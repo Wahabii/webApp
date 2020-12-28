@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AcueilleComponent } from './components/acueille/acueille.component'
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
+import { httpInterceptorProviders } from './services/auth-interceptor';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,7 @@ import { FooterComponent } from './components/footer/footer.component';
     BrowserAnimationsModule
 
   ],
-  providers: [],
+  providers: [httpInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

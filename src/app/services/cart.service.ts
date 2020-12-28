@@ -20,7 +20,7 @@ const httpOptions = {
 })
 export class CartService {
 
-   private url :'http://localhost:3000/api/carts';
+   private url = 'http://localhost:3000/api/carts';
   constructor(private fs: AngularFirestore, private as: AuthService,private http: HttpClient) { }
 
 

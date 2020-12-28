@@ -41,16 +41,16 @@ login (form) {
        console.log("token >>>>",data.jwt);
        console.log("id>>>", data.id);
 
-       if(data.jwt != null && data.username != null){
+
          localStorage.setItem('token', data.jwt)
          localStorage.setItem('id', data.id)
 
           this.router.navigate(['/accuille']);
 
-    }
-    else {
-        alert('username or pasword invalid !!!');
-    }
+
+ },
+ error => {
+  alert('username or pasword invalid !!!');
  })
 }
 

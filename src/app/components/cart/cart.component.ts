@@ -29,7 +29,7 @@ export class CartComponent implements OnInit {
     */
   }
 
-/*
+
   delete(index){
 
     this.cs.delete(this.cart[index].id);
@@ -41,6 +41,6 @@ export class CartComponent implements OnInit {
 
   }
 
-*/
+
 
 }

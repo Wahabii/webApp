@@ -4,12 +4,13 @@ import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Product } from '../interfaces/product.interface';
 import { Shopping } from '../interfaces/shopping.interface';
+import { Observable } from 'rxjs';
 
 
 let token = localStorage.getItem('token');
+console.log(token)
 const httpOptions = {
-  headers: new HttpHeaders({'Content-Type': 'application/json'
-  })
+  headers: new HttpHeaders({'Content-Type': 'application/json', 'access_token': token})
 }
 
 
@@ -19,19 +20,19 @@ const httpOptions = {
 })
 export class CartService {
 
-   private url : 'http://localhost:3000/api/carts';
+   private url :'http://localhost:3000/api/carts';
   constructor(private fs: AngularFirestore, private as: AuthService,private http: HttpClient) { }
 
 
-  addDataToCart(data: Shopping) {
-    
+  addDataToCart(data: Shopping): Observable <any> {
+
     console.log("data reived in the server>>>", data);
 
     return this.http.post<any>(this.url,data,httpOptions);
 
   }
 
-  /*
+
   getCart(){
     let uid = localStorage.getItem('id');
     return this.fs.collection(`users/${uid}/cart`).snapshotChanges();
@@ -49,5 +50,5 @@ export class CartService {
    })
 
  }
-*/
+
 }
